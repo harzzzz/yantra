@@ -19,7 +19,8 @@ class YoutubeLike extends Component {
     }
     
     searchVideos = (term = 'surfboards') => {
-        const API_TOKEN = 'AIzaSyDLHk7kAmlZMNDaHmIA7ahz6ifofAS8LnE';
+        // here goes ur api key
+        const API_TOKEN = '';
         console.log(term);
         YTSearch({key: API_TOKEN, term}, videos => {
             this.setState({
